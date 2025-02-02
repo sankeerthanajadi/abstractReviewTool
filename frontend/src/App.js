@@ -1,11 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-
-import Login from './loginPage/RegistrationForm'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Display from './frontPage/display'; // Your main component
+import DocUpload from './myProject/doc_upload'; // Your doc_upload component
 
 function App() {
   return (
-    <Login/>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Display />} />
+        <Route path="/myProject/doc_upload" element={<DocUpload />} />
+        {/* Add other routes here */}
+      </Routes>
+    </Router>
   );
 }
 
