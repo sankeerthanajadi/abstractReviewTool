@@ -61,8 +61,8 @@ const Display = () => {
         ref={sidebarRef}
         className={`sidebar ${sidebarOpen ? 'open' : ''}`}
       >
-        <p className="sidebarItem" onClick={() => navigateTo("/home")}>Home</p>
-        <p className="sidebarItem" onClick={() => navigateTo("/myProject/doc_upload")}>My Project</p>
+        <p className="sidebarItem" onClick={() => navigateTo("/")}>Home</p>
+        <p className="sidebarItem" onClick={() => navigateTo("/tool/fileUpload")}>My Project</p>
         <p className="sidebarItem" onClick={() => navigateTo("/messages")}>Messages</p>
         <p className="sidebarItem" onClick={() => navigateTo("/info")}>Info About Class</p>
         <p className="sidebarItem" onClick={() => navigateTo("/settings")}>Settings</p>
@@ -112,6 +112,7 @@ const Display = () => {
             >
               <FaCheckCircle className="iconCheck" />
               <h2 className="stepTitle">2. AI Scanning</h2>
+              <FaFileAlt className="iconDocument" />
             </motion.div>
           )}
         </motion.div>

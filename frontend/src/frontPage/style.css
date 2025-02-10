@@ -1,6 +1,6 @@
 /* General Page Styles */
 .page {
-    background-color: white;
+    background-color:  #d0ddd2;
     height: 100vh;
     margin: 0;
     position: relative;
@@ -86,7 +86,7 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    background-color: #f8f8f8;
+    background-color: #d0ddd2;
     position: relative;
     left: 100px;
   }
@@ -154,3 +154,8 @@
     padding: 0;
   }
   
+  .iconDocument{
+    font-size: 200px;
+  color:  #d0ddd2;
+  transition: transform 3s ease-in-out;
+  }
