@@ -61,7 +61,7 @@ const Display = () => {
         ref={sidebarRef}
         className={`sidebar ${sidebarOpen ? 'open' : ''}`}
       >
-        <p className="sidebarItem" onClick={() => navigateTo("/")}>Home</p>
+        <p className="sidebarItem" onClick={() => navigateTo("/frontPageStudent/display")}>Home</p>
         <p className="sidebarItem" onClick={() => navigateTo("/tool/fileUpload")}>My Project</p>
         <p className="sidebarItem" onClick={() => navigateTo("/messages")}>Messages</p>
         <p className="sidebarItem" onClick={() => navigateTo("/info")}>Info About Class</p>

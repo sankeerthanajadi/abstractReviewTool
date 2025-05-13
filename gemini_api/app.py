@@ -131,7 +131,7 @@ app.config["MAIL_USE_SSL"] = False
 # app.config["MAIL_PASSWORD"] = os.getenv("EMAIL_PASS")  # Set in .env
 # app.config["MAIL_DEFAULT_SENDER"] = os.getenv("EMAIL_USER")
 app.config["MAIL_USERNAME"] = "sankeerthanajadi6@gmail.com"
-app.config["MAIL_PASSWORD"] = "pacrsfybyfrjnjvi"
+app.config["MAIL_PASSWORD"] = "mapd ttzq enuh lhmz"
 app.config["MAIL_DEFAULT_SENDER"] = "sankeerthanajadi6@gmail.com"
 
 

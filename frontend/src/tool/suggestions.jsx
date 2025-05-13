@@ -91,9 +91,16 @@ function Suggestions({ suggestions: propSuggestions}) {
         </div>
       </div>
       <p className="again">**Include these changes in your document and upload again for the review**</p>
+      {/* <button className="notify" onClick={handleNotifyGuide} disabled={isSending}>
+        {isSending ? "Sending..." : "Send to Guide"}
+      </button> */}
+
+      <div className="button-wrapper">
+      <span className="finger-emoji" role="img" aria-label="pointing finger">👉</span>
       <button className="notify" onClick={handleNotifyGuide} disabled={isSending}>
         {isSending ? "Sending..." : "Send to Guide"}
       </button>
+    </div>
     </>
   );
 }
