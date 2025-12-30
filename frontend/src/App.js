@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route,useLocation } from "react-router
 import Login from './loginPage/RegistrationForm'
  import { SuggestionsProvider } from "./tool/SuggestionsContext"; 
 import Guide from './guideInterface/guide'
-import Coord from './coordinator/coordinatorPage'
+import Coord from './coordinator/coordinator'
  import FileUpload from './tool/fileUpload';  
  import Suggestions from './tool/suggestions';
 
@@ -14,31 +14,8 @@ function App() {
 
   const [suggestions, setSuggestions] = useState(null);
     
-  //   <SuggestionsProvider>
-  //     <Router>
-  //       <Routes>
-  //         <Route path="/" element={<Login />} />
-  //         <Route path="/frontPageStudent/display" element={<Display/>} />
-  //         <Route path="/guideInterface/guide" element={<Guide/>} />
-  //         <Route path="/coordinator/coordinatorPage" element={<Coord/>} />
-  //         <Route path="/tool/fileupload" element={<FileUpload />} />
-  //         <Route path="/tool/suggestions" element={<Suggestions />} />
-  //       </Routes>
-  //     {/* <div className="app-container">
-  //       <h1>Abstract Review Tool</h1>
-  //       <FileUpload setSuggestions={setSuggestions} />
-  //       {suggestions && <Suggestions suggestions={suggestions} />}
-  //     </div> */}
-  //     {location.pathname.includes("/tool") && (
-  //       <div className="app-container">
-  //         <h1>Abstract Review Tool</h1>
-  //         <FileUpload setSuggestions={setSuggestions} />
-  //         {suggestions && <Suggestions suggestions={suggestions} />}
-  //       </div>
-  //     )}
-  //     </Router>
-  //   </SuggestionsProvider>
-  // );
+  
+ 
 
   return (
     <SuggestionsProvider>
@@ -59,7 +36,7 @@ function MainRoutes() {
         <Route path="/" element={<Login />} />
         <Route path="/frontPageStudent/display" element={<Display />} />
         <Route path="/guideInterface/guide" element={<Guide />} />
-        <Route path="/coordinator/coordinatorPage" element={<Coord />} />
+        <Route path="/coordinator/coordinator" element={<Coord />} />
         <Route path="/tool/fileupload" element={<FileUpload />} />
         <Route path="/tool/suggestions" element={<Suggestions />} />
       </Routes>

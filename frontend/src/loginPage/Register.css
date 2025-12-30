@@ -1,4 +1,4 @@
-/* Ensures styles apply only to the login page */
+/* Login Page Only */
 .login-container {
   display: flex;
   justify-content: center;
@@ -8,31 +8,29 @@
   background: linear-gradient(135deg, #a3b18a, #588157);
 }
 
-.form-container {
+.login-container .form-container {
   width: 100%;
   max-width: 400px;
   background: white;
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  /* text-align: center; */
-  
 }
 
-.title {
+.login-container .title {
   font-size: 1.8rem;
   font-weight: bold;
   color: #3a5a40;
   margin-bottom: 10px;
 }
 
-.message {
+.login-container .message {
   font-size: 0.9rem;
   color: #606c38;
   margin-bottom: 1rem;
 }
 
-.input {
+.login-container .input {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
@@ -42,22 +40,22 @@
   transition: all 0.3s ease;
 }
 
-.input:focus {
+.login-container .input:focus {
   border-color: #3a5a40;
   box-shadow: 0 0 5px rgba(58, 90, 64, 0.5);
   outline: none;
 }
 
-.flex {
+.login-container .flex {
   display: flex;
   justify-content: space-between;
 }
 
-.flex label {
+.login-container .flex label {
   width: 48%;
 }
 
-.submit {
+.login-container .submit {
   width: 100%;
   padding: 10px;
   margin-top: 10px;
@@ -71,27 +69,26 @@
   transition: background 0.3s ease;
 }
 
-.submit:hover {
+.login-container .submit:hover {
   background: #2b4030;
 }
 
-.signin {
+.login-container .signin {
   margin-top: 10px;
   font-size: 0.9rem;
 }
 
-.signin a {
+.login-container .signin a {
   color: #3a5a40;
   text-decoration: none;
   font-weight: bold;
 }
 
-.signin a:hover {
+.login-container .signin a:hover {
   text-decoration: underline;
 }
 
-/* Error Message */
-.error-message {
+.login-container .error-message {
   color: red;
   font-size: 0.9rem;
   margin-top: 10px;

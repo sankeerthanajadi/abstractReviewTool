@@ -51,7 +51,7 @@ const Display = () => {
     <div className="page">
       <nav ref={navbarRef} className="navbar">
         <FaBars className="menuIcon" onClick={toggleSidebar} />
-        <h1 className="brand">Automated Abstract Review Tool</h1>
+        <h1 className="brand">Smart Project Monitoring Tool</h1>
         <div className="icons">
           <FaBell className="icon" />
           <FaUserCircle className="icon" />
